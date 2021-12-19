@@ -51,13 +51,14 @@ class Solver:
 
 
 def main():
-  board_input = input("Please enter the starting positions of the marbles:")
-  try:
-    board_list = [int(x) for x in  board_input.split(",")]
-  except ValueError as err:
-    print('Please enter a list of numbers that is comma delimited')
-    main()
-  board = Solver(board_list)
-  board.solve()
+    board_input = input("Please enter the starting positions of the marbles:")
+    try:
+        board_list = [int(x) for x in board_input.split(",")]
+    except ValueError as err:
+        print('Please enter a list of numbers that is comma delimited')
+        main()
+    board = Solver(board_list)
+    board.solve()
+
 
 main()
