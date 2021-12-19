@@ -1,4 +1,0 @@
-Hello World!
-Data Science
-School of Information
-3.14159
