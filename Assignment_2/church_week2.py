@@ -13,12 +13,12 @@ def state(n):
         return "cold"
 
 # Initialize program and controls flow of execution
-def _init_():
+def main():
     try:
         print("Player 1 is in a ", state(int(input("Starting number:"))))
         return
     except ValueError as err:
         print('Please enter a number value')
-        _init_()
+        main()
 
-_init_()
+main()
